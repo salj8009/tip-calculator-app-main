@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tablet.css" media="(min-width: 1024px">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
+  <main>
+    <section class="content-buttons">
+      <p class="content-buttons__bill">Bill</p>
+      <input class="input-amount" type="text" placeholder="$ 142.55">
+      <img class="icon-dolar" src="./images/icon-dollar.svg" alt="icon dollar">
+      <p class="content-buttons__tip">Select Tip %</p>
+      <div class="content-buttons__percentage">
+        <button class="btn-5">5%</button>
+        <button class="btn-10">10%</button>
+        <button class="btn-15">15%</button>
+        <button class="btn-25">25%</button>
+        <button class="btn-50">50%</button>
+        <p class="btn-custom">Custom</p>
+        <dialog class="dialogo hidden">
+          <input type="number" class="input-amount input-custom">
+          <button class="btn-custom-close">Custom</button>
+        </dialog>
+      </div>
+      <p class="people">Number of People</p>
+      <input class="input-amount-people" type="number" placeholder="5">
+      <img class="icon-person" src="./images/icon-person.svg" alt="icon person">
+      <div>        
+      </div>
+    </section>
+    <section class="content-amount">
+      <div class="content-amount__tip-amount">
+        <div class="content-amount__tipPerson">
+          <span class="content-amount__spans">Tip Amount</span>
+          <span class="content-amount__person">/ person</span> 
+        </div>      
+        <span class="amount">$ 0</span>
+      </div>
+      <div class="content-amount__tip-amount">
+        <div class="content-amount__tipPerson">
+          <span class="content-amount__spans">Total</span>
+          <span class="content-amount__person">/ person</span>
+        </div>        
+        <span class="amount amount__preson">$ 0</span>
+      </div>
+      <button class="btn-reset">RESET</button>
+    </section>
+  </main>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
